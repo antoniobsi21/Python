@@ -1,11 +1,7 @@
 azul
 vermelho
 branco
-
 preto
-
 amarelo
-
 verde
-
 rosa
