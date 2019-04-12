@@ -29,6 +29,9 @@ def main():
 	nickname = getNickName()
 
 	invocador = Invocador(nickname, regiao)
-	print(invocador.getSoloQueueElo())
+	# print(invocador.dados)
+	print("ID: \'{}\'.".format(invocador.dados['id']))
+	# invocador.getSoloQueuePosition()
+	invocador.printAllQueuePositions()
 
 main()
