@@ -29,6 +29,6 @@ def main():
 	nickname = getNickName()
 
 	invocador = Invocador(nickname, regiao)
-	invocador.getSummonerStats()
+	print(invocador.getSoloQueueElo())
 
 main()
