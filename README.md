@@ -1,4 +1,5 @@
-JOGO DA ADIVINHAÇÃO.
+Alguns códigos em Python
+
 
 Antonio Fernandes Junior
 
