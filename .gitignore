@@ -1,1 +1,3 @@
-LETS_DO_THIS/__pycache__/
+__pycache__/
+venv/
+openCVenv/
