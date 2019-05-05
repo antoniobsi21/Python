@@ -8,7 +8,7 @@ Projeto destina-se ao estudo da linguagem de programação Python e algumas de sua
 
 ## Jogo da adivinhação
 
-Trata-se de uma pequena aplicação desenvolvida em sala de aula de um brincadeira para adivinha uma palvra embaralhada de uma lista de palavras (diretório: **jogoAdv**).
+Trata-se de uma pequena aplicação desenvolvida em sala de aula de um brincadeira para adivinhar uma palavra embaralhada de uma lista de palavras (diretório: **jogoAdv**).
 
 ###### Antonio Fernandes Junior
 ###### antonio.fernandes.bsi@gmail.com
