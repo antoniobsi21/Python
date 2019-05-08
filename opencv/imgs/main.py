@@ -1,13 +1,23 @@
 import numpy as np
 import cv2 as cv
+from sys import exit, argv
+from os import listdir
 
 img1 = cv.imread('fundo.png')
 img2 = cv.imread('logo.png')
 img2 = cv.resize(img2[0:175, :], None, fx=0.6, fy=0.6, interpolation = cv.INTER_CUBIC)
 
+
+for x, y in enumerate(argv[]):
+	if y.lower() == 'inc':
+		print(x,y)
+		if argv[x + 1].isdigit():
+			inc = int(argv[x+1])
+
 rows1, cols1, channels1 = img1.shape
 rows2, cols2, channels2 = img2.shape
 contC = 0
+inc = 20
 going = True
 
 img2gray = cv.cvtColor(img2, cv.COLOR_BGR2GRAY)
@@ -20,10 +30,10 @@ while 1:
 	result = img1.copy()
 	if cols2 + contC > cols1:
 		going = False
-		contC -=1
+		contC = cols1 - cols2
 	elif contC < 0:
 		going = True
-		contC += 1
+		contC = 0
 	roi = img1[rows1-rows2:rows1, contC:cols2+contC]
 
 	roi_bg = cv.bitwise_and(roi,roi,mask=mask_inv)
@@ -35,9 +45,13 @@ while 1:
 	key = cv.waitKey(1)
 	if key == ord('q'):
 		break
+	elif key == ord('p'):
+		key2 = cv.waitKey(0)
+		if key2 == ord('q'):
+			exit()
 	if going:
-		contC += 1
+		contC += inc
 	else:
-		contC -= 1
+		contC -= inc
 
 cv.destroyAllWindows()
