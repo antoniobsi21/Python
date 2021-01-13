@@ -1,14 +1,24 @@
 # Python
 
-Projeto destina-se ao estudo da linguagem de programaÁ„o Python e algumas de suas bibliotecas.
+Projeto destina-se ao estudo da linguagem de programa√ß√£o Python e algumas de suas bibliotecas.
 
 ## Opencv-python
 
-**OpenCV** È uma biblioteca gratuitamente distribuÌda para o desenvolvimento de aplicaÁıes de vis„o computacional. A mesma È distribuÌda em diversas linguagens, incluindo python, e pode ser facilmente instalada atravÈs do comando "pip3 install opencv-python" (diretÛrio: **opencv**).
+**OpenCV** √© uma biblioteca gratuitamente distribu√≠da para o desenvolvimento de aplica√ß√µes de vis√£o computacional.
+ A mesma √© distribu√≠da em diversas linguagens, incluindo python, e pode ser facilmente instalada atrav√©s do comando
+ "pip3 install opencv-python" (diret√≥rio: **opencv**).
 
-## Jogo da adivinhaÁ„o
+## Jogo da adivinha√ß√£o
 
-Trata-se de uma pequena aplicaÁ„o desenvolvida em sala de aula de um brincadeira para adivinhar uma palavra embaralhada de uma lista de palavras (diretÛrio: **jogoAdv**).
+Trata-se de uma pequena aplica√ß√£o desenvolvida em sala de aula de um brincadeira para adivinhar uma palavra embaralhada
+de uma lista de palavras (diret√≥rio: **jogoAdv**).
+
+## Tracking
+
+Um programa b√°sico que apresenta uma pequena intera√ß√£o com o usu√°rio para demonstrar algumas fun√ß√µes amplamente
+utilizadas no OpenCV (diret√≥rio **opencv/tracking**)
+
+ 
 
 ###### Antonio Fernandes Junior
 ###### antonio.fernandes.bsi@gmail.com

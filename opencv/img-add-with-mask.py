@@ -1,23 +1,17 @@
 import numpy as np
 import cv2 as cv
-from sys import exit, argv
+from sys import exit
 from os import listdir
 
-img1 = cv.imread('fundo.png')
-img2 = cv.imread('logo.png')
+img1 = cv.imread('imgs/fundo.png')
+# img1 deve ser maior que img2
+img2 = cv.imread('imgs/logo.png')
 img2 = cv.resize(img2[0:175, :], None, fx=0.6, fy=0.6, interpolation = cv.INTER_CUBIC)
-
-
-for x, y in enumerate(argv[]):
-	if y.lower() == 'inc':
-		print(x,y)
-		if argv[x + 1].isdigit():
-			inc = int(argv[x+1])
 
 rows1, cols1, channels1 = img1.shape
 rows2, cols2, channels2 = img2.shape
 contC = 0
-inc = 20
+inc = 5
 going = True
 
 img2gray = cv.cvtColor(img2, cv.COLOR_BGR2GRAY)

@@ -58,6 +58,8 @@ while trys <= numsOfTry:
         break
     elif trys == numsOfTry:
         print('\n\n\n\n{0} WE ARE SORRY {0}\n\n{1}You missed all the attempts. :('.format('-'*21,' '*13))
+        print('\n\n{} Better luck next time!\n\n'.format(' ' * 17))
+        exit()
     else:
         print('\n{}'.format(positive_msg()))
         trys += 1
